@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { SITENAME } from "@/lib/constants";
@@ -56,7 +56,7 @@ export default function RootLayout({
         "image": "https://bocilsmp.pages.dev/favicon.ico",
         "potentialAction":{
             "@type":"ReadAction",
-            "target":"https://bocilsmp.pages.dev/"}
+            "target":"https://bocilsmp.pages.dev"}
         }
         const jsonLd2 = {
             "@context": "https://schema.org",
@@ -93,6 +93,7 @@ export default function RootLayout({
                     {children}
                 </ThemeProvider>
             </body>
+<Script src="https://js.juicyads.com/jp.php?c=947403z2v256s2x2w264x294&u=http%3A%2F%2Fwww.juicyads.rocks"/>
         </html>
     );
 }
